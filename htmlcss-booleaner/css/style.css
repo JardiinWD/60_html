@@ -75,4 +75,21 @@ main {
 }
 
 
+/* Related Articles */
+#monitor {
+  background-image: url("../img/monitor.jpg");
+}
+
+#graph {
+  background-image: url("../img/graph.jpg");
+}
+
+.related_article {
+  width: 250px;
+  height: 200px;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 900;
+  padding: 10px;
+}
 /* Footer */
