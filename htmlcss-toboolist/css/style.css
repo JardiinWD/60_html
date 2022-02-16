@@ -1,3 +1,38 @@
+:root {
+  --dark: #444851;
+  --primary-color: #47ADF1;
+  --recruiting-color: #64C0A9;
+  --goals-color: #9C72E4;
+  --sales-color: #B0C926;
+  --light-color: #CCD1D6;
+  --website-color: #D863A1;
+  --danger-color: #EB5952;
+  --mobile-color: #F29E33;
+  --page-bg: #F6F8F9;
+  --white: #FFFFFF;
+}
+
 body {
   margin: 0;
+  background-color: var(--page-bg);
+  font-family: Verdana,
+  Geneva,
+  Tahoma,
+  sans-serif;
+  }
+
+  header {
+    background-color: var(--white);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    vertical-align: bottom;
+    height: 40px;
+    width: auto;
+}
+
+.logo_text {
+  font-size: 2rem;
 }
