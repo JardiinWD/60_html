@@ -1,9 +1,15 @@
 /* Common 
 **************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --dark: #444851;
   --primary-color: #47ADF1;
-  --recruiting-color: #64C0A9;
+  --success-color: #64C0A9;
   --goals-color: #9C72E4;
   --sales-color: #B0C926;
   --light-color: #CCD1D6;
@@ -22,13 +28,18 @@ body {
   sans-serif;
   }
 
+  li {
+    margin-bottom: 1rem;
+  }
+
   /* Utility classes 
   ******************/
   .btn {
     background-color: transparent;
     border: none;
     padding: 0.75rem;
-    border-radius: 0.5rem
+    border-radius: 0.5rem;
+    display: inline-block;
   }
 
   .btn-primary {
@@ -68,6 +79,7 @@ body {
     background-color: var(--white);
     border-radius: 0.75rem;
     box-shadow: 0 0 10px #b5b5b563;
+    padding-bottom: 2rem;
   }
 
   /* Actions */
@@ -75,6 +87,76 @@ body {
   .actions {
     padding: 1rem 2.5rem;
     border-bottom: 2px solid var(--page-bg);
+    margin-bottom: 2rem;
   }
 
   /* Tasks */
+  section {
+    padding-left: 2rem;
+  }
+
+  .style-none {
+    list-style: none;
+    padding-left: 0.25rem;
+  }
+
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .check {
+    border: 1px solid var(--success-color);
+    color: var(--success-color)
+  }
+
+  .cross {
+    border: 1px solid var(--danger-color);
+    color: var(--danger-color)
+  }
+
+  .badge {
+    padding: 0.5rem;
+    font-size: 0.6rem;
+    border-radius: 0.75rem;
+    display: inline-block;
+  }
+
+  .badge_editorial {
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+
+  .badge_goals {
+    color: var(--white);
+    background-color: var(--goals-color);
+  }
+
+  .badge_recruiting {
+    color: var(--white);
+    background-color: var(--success-color);
+  }
+
+  .badge_mobile {
+    color: var(--white);
+    background-color: var(--mobile-color);
+  }
+
+  .badge_website {
+    color: var(--white);
+    background-color: var(--website-color);
+  }
+
+  .badge_sales {
+    color: var(--white);
+    background-color: var(--sales-color);
+  }
+
+  footer {
+
+    padding: 2rem;
+    text-align: center;
+  }
