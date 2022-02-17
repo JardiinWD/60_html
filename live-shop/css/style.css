@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+}
+
+.banner {
+  background-color: black;
+  color: white;
+  height: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner>h1 {
+  line-height: 360px;
+  vertical-align: middle;
+}
+
+.banner:hover h1 {
+  color: red;
+}
+
+.products {
+  width: 1200px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.product {
+  display: inline-block;
+  position: relative;
+  margin: 1rem;
+}
+
+.product>img {
+  box-shadow: 0 0 10px #9999996e;
+
+}
+
+.badge {
+  padding: 4px;
+  font-size: 0.65rem;
+  position: absolute;
+  top: 10px;
+  right: -5px;
+}
+
+.bg_green {
+  background-color: green;
+}
+
+.bg_red {
+  background-color: red;
+}
+
+.like {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  color: red;
+  visibility: hidden;
+}
+
+.product:hover .like {
+  visibility: visible;
+}
+
+.product:hover .badge {
+  background-color: yellow;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+}
