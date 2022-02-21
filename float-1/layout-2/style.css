@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  margin: auto;
+}
+
+header {
+  height: 100px;
+  background-color: palegreen;
+}
+
+main {
+  height: 1000px;
+  background-color: paleturquoise;
+}
+
+
+footer {
+  height: 100px;
+  background-color: palegreen;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col,
+.col-lg {
+  float: left;
+}
+
+.col {
+  background-color: red;
+  width: 25%;
+  height: 300px;
+}
+
+.col-lg {
+  background-color: red;
+  width: 40%;
+  height: 300px;
+  margin: 0 5%;
+}

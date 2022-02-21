@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+aside,
+main {
+  float: left;
+  height: 300px;
+}
+
+aside {
+  width: 200px;
+  background-color: pink;
+}
+
+main {
+  width: 800px;
+  background-color: coral;
+}
