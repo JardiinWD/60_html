@@ -1,0 +1,78 @@
+/* Common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  margin: auto;
+}
+
+/* Debug */
+.debug>header,
+.debug>footer {
+  background-color: red;
+  height: 200px;
+}
+
+.debug>main {
+  background-color: cornflowerblue;
+  height: 1200px;
+}
+
+.debug .hero_image {
+  background-color: aquamarine;
+  height: 400px;
+}
+
+.debug .col-full {
+  background-color: coral;
+  height: 120px;
+}
+
+.debug .col-sm,
+.debug .col-lg {
+  height: 640px;
+}
+
+.debug .col-sm {
+  background-color: coral;
+}
+
+.debug .col-lg {
+  background-color: coral;
+}
+
+/* Utility */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-full {
+
+  float: left;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.col-sm {
+  width: 25%;
+  float: left;
+}
+
+.col-lg {
+  width: 46%;
+  margin: 0 2%;
+  float: left;
+
+}
+
+/* Main */
+
+.hero_image {
+  margin: 10px 0;
+}
