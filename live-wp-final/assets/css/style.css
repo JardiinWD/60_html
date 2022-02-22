@@ -7,6 +7,7 @@
   --arial-font: Arial,
     Helvetica,
     sans-serif;
+    --paragraphs-color: #929292;
 }
 
 * {
@@ -20,7 +21,9 @@ body {
   margin: auto;
   font-family: var(--monserrat-font);
 }
-
+p {
+  color: var(--paragraphs-color)
+}
 /* Debug */
 .debug>header,
 .debug>footer {
@@ -136,8 +139,20 @@ body {
   bottom: 5rem;
   left: 2.5rem;
 }
-
+.hero_text>p {
+  color: var(--lighter-color);
+}
 .hero_text>.title {
   font-size: 30px;
   font-weight: 300;
+}
+/* Leadership */
+
+.leadership {
+  margin: 2rem 0;
+}
+
+.leadership>h1 {
+  font-size: 40px;
+  font-family: var(--arial-font);
 }
