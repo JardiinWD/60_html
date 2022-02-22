@@ -186,3 +186,11 @@ article>img {
   margin: 1rem 0;
 
 }
+#site_footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+.text_red {
+  color: red;
+}
