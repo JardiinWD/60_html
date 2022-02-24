@@ -1,0 +1,86 @@
+/* Common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/***********
+ Utility
+*********/
+.p_relative {
+  position: relative;
+}
+
+.h_100 {
+  height: 100vh;
+}
+
+.mx_1 {
+  margin: 0 1rem;
+}
+
+/* Colors */
+.bg_red {
+  background-color: red;
+}
+
+.bg_green {
+  background-color: green;
+}
+
+.bg_yellow {
+  background-color: yellow;
+}
+
+.text_green {
+  color: green;
+}
+
+.text_yellow {
+  color: yellow;
+}
+
+
+
+/* Navigation */
+.navigation {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1;
+}
+
+.navigation a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #333;
+  background-color: lightsteelblue;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #5a5a5a78;
+
+}
+
+/* Shoe */
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.item>h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
