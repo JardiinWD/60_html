@@ -1,0 +1,206 @@
+:root {
+  --dark: #000000;
+  --primary: #0061FF;
+  --secondary: #B4D0E7;
+  --light: #F5F5F5;
+  --lighter: #FFFFFF;
+  --accent: #61082B;
+}
+
+/* Common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans',
+    sans-serif;
+  min-width: 1440px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Debug */
+
+.debug>header {
+  background-color: var(--primary);
+  height: 100px;
+}
+
+.debug>main {
+  background-color: aquamarine;
+  height: 2000px;
+}
+
+.debug>footer {
+  height: 500px;
+}
+
+.debug [class^="col-"] {
+  background-color: var(--accent);
+  border: 1px solid var(--lighter);
+  height: 100px;
+}
+
+.debug .plans [class^="col-"] {
+  background-color: var(--accent);
+  border: 1px solid var(--lighter);
+  height: 400px;
+}
+
+.debug .partners {
+  background-color: var(--light);
+}
+
+.debug .features {
+  background-color: var(--secondary);
+}
+
+/* #region Utility */
+
+/* Grid */
+.container {
+  width: 70%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container-lg {
+  width: 90%;
+  max-width: 1162px;
+  margin: auto;
+}
+
+.row {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class^="col-"] {
+  float: left;
+}
+
+.col-33 {
+  width: 33.33%;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-60 {
+  width: 60%;
+}
+
+.col-100 {
+  width: 100%;
+}
+
+/* Text */
+ul.inline-list {
+  list-style: none;
+  display: inline-block;
+
+}
+
+ul.inline-list>li {
+  display: inline-block;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--lighter);
+}
+
+/* Spaces */
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+/* #endregion Utility */
+
+
+
+/* #region Header */
+header {
+  padding: 0.75rem;
+}
+
+.navbar .menu-left a,
+.navbar .menu-right a {
+  padding: 0.5rem;
+}
+
+.navbar .logo>img {
+  vertical-align: sub;
+}
+
+/* #endregion Header */
+
+
+
+/* #region Main */
+
+/* Jumbotron */
+.jumbotron {
+  height: 610px;
+  background-color: var(--secondary);
+}
+
+.jumbotron h1 {
+  padding-top: 4rem;
+  font-size: 68px;
+}
+
+.hero_text p {
+  margin: 2rem 0rem 1.5rem;
+}
+
+.hero_call_to_action>div {
+  font-size: 0.75rem;
+}
+
+.jumbotron .jumbo-image {
+  margin-top: 2rem;
+}
+
+/* #endregion Main */
+
+/* Footer */
+
+footer {
+  background-color: var(--dark);
+}
