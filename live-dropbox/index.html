@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dropbox</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -15,32 +18,101 @@
 <body class="">
 
   <header id="site_header">
-    <div class="row">
-      <nav class="navbar">
-        <div class="col-50">
-          <a class="logo">
-            <img src="./assets/img/logo-small.png" alt="">
-          </a>
+    <nav class="navbar clearfix">
+      <div class="float-left w-50">
+        <a class="logo">
+          <img src="./assets/img/logo-small.png" alt="">
+        </a>
 
-          <ul class="menu-left inline-list">
-            <li><a href="">Perché Dropbox?</a></li>
-            <li><a href="">Funzioni</a></li>
-            <li><a href="">Piani e prezzi</a></li>
+        <ul class="menu-left inline-list">
+          <li class="dropdown">
+            <a href="">Perché Dropbox?</a>
+            <div class="dropdown-menu">
+              <h4>Why Dropbox menu</h4>
+              <ul class="unstyled">
+                <li><a href="">Lorem</a></li>
+                <li><a href="">Lorem</a></li>
+                <li><a href="">Lorem</a></li>
+                <li><a href="">Lorem</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="">Funzioni</a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col-50">
+                  <h4>Why Dropbox menu</h4>
+                  <ul class="unstyled">
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                  </ul>
+                </div>
+                <div class="col-50">
+                  <h4>Why Dropbox menu</h4>
+                  <ul class="unstyled">
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="">Piani e prezzi</a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col-33">
+                  <h4>Why Dropbox menu</h4>
+                  <ul class="unstyled">
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                  </ul>
+                </div>
+                <div class="col-33">
+                  <h4>Why Dropbox menu</h4>
+                  <ul class="unstyled">
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                  </ul>
+                </div>
+                <div class="col-33">
+                  <h4>Why Dropbox menu</h4>
+                  <ul class="unstyled">
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
           </ul>
-        </div>
-        <div class="col-50 text-right">
-          <ul class="menu-left inline-list">
-            <li><a href="">Supporto</a></li>
-            <li><a href="">Contatta l'ufficio vendite</a></li>
-            <li><a href="">Accedi</a></li>
-          </ul>
-          <a href="#" class="btn btn-primary">
-            Inizia
-          </a>
-        </div>
+          </div>
+          <div class="float-left w-50 text-right">
+            <ul class="menu-right inline-list">
+              <li>
+                <a href="">Supporto</a>
+              </li>
+              <li><a href="">Contatta l'ufficio vendite</a></li>
+              <li><a href="">Accedi</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary">
+              Inizia
+            </a>
+          </div>
       </nav>
       <!-- /.navbar -->
-    </div>
+
   </header>
   <!-- /#site_header -->
   <main id="site_main">
@@ -61,10 +133,15 @@
                 <a href="#" class="btn btn-primary px-1">
                   Inizia la tua prova gratuita
                 </a>
+                <!-- /.btn btn-primary -->
                 <div>Annulla in qualsiasi momento</div>
+                <div class="scroll-down mt-2">
+                  <a href="#plans-section">
+                    <i class="fas fa-arrow-down fa-2x fa-fw"></i>
+                  </a>
+                </div>
               </div>
               <!-- /.hero_call_to_action -->
-              <!-- /.btn btn-primary -->
             </div>
           </div>
           <!-- /.col-40 -->
@@ -77,35 +154,311 @@
       </div>
     </div>
     <!-- /.jumbotron -->
-    <section class="plans">
+    <section id="plans-section" class="plans">
       <div class="container">
-        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Trova il piano Dropbox Business che fa per te</h2>
+        <div class="payment_plan_selector">
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="payment_plan" id="payment_plan" value="montly" checked>
+              Fatturazione mensile
+              <input class="form-check-input" type="radio" name="payment_plan" id="payment_plan" value="yearly">
+              Fatturazione Annuale
+            </label>
+            <!-- /.form-check-label -->
+          </div>
+        </div>
+        <!-- /.payment_plan_selector -->
         <div class="row">
-          <div class="col-33">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam ducimus maxime ullam
-            voluptas ab blanditiis alias aliquid cumque reiciendis saepe quibusdam perferendis doloribus vel
-            praesentium, dignissimos eum nemo consequatur.</div>
-          <div class="col-33">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam ducimus maxime ullam
-            voluptas ab blanditiis alias
-            aliquid cumque reiciendis saepe quibusdam perferendis doloribus vel praesentium, dignissimos eum nemo
-            consequatur.</div>
-          <div class="col-33">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam ducimus maxime ullam
-            voluptas ab blanditiis alias
-            aliquid cumque reiciendis saepe quibusdam perferendis doloribus vel praesentium, dignissimos eum nemo
-            consequatur.</div>
-          <div class="col-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam ducimus maxime ullam
-            voluptas ab blanditiis alias
-            aliquid cumque reiciendis saepe quibusdam perferendis doloribus vel praesentium, dignissimos eum nemo
-            consequatur.</div>
+          <div class="col-33">
+        
+            <div class="card">
+              <div class="card-header">
+                Singolo
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <h3>Professional</h3>
+                <div class="price">
+                  <strong>19.99 $</strong>
+                  <div class="recurrence">/month</div>
+                </div>
+                <!-- /.price -->
+                <div class="features">
+        
+                  <div class="feature">
+                    <div class="icon">
+                      <i class="fas fa-user-alt fa-xs fa-fw"></i>
+                    </div>
+                    <div class="text">1 user</div>
+                  </div>
+                  <div class="feature">
+                    <div class="icon">
+                      <i class="fas fa-folder fa-xs fa-fw"></i>
+                    </div>
+                    <div class="text">3tb di spazio di archiviazione sicuro</div>
+                  </div>
+                  <div class="feature">
+                    <div class="icon">
+                      <i class="fas fa-pencil-alt fa-xs fa-fw"></i>
+                    </div>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                  </div>
+                </div>
+                <!-- /.features -->
+        
+                <div class="plan_call_to_action">
+                  <a href="#" class="btn btn-lg btn-primary w-100 mb-2">Prova gratis per 30 giorni</a>
+        
+                  oppure <a href="#" class="link">acquista ora</a>
+                </div>
+                <!-- /.plan_call_to_action -->
+        
+                <hr>
+        
+                <div class="plan-details">
+                  <h4>Punti salienti del piano</h4>
+                  <div class="features">
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <!-- /.feature -->
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor </div>
+                    </div>
+                    <!-- /.feature -->
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor </div>
+                    </div>
+                    <!-- /.feature -->
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                      <!-- /.feature -->
+                    </div>
+                    <!-- /.feature -->
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur</div>
+                    </div>
+                    <!-- /.feature -->
+                  </div>
+                  <!-- /.features -->
+                </div>
+                <!-- /.plan-details -->
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        
+          </div>
+          <div class="col-33">
+            <div class="card">
+              <div class="card-header">
+                Singolo
+              </div>
+              <div class="card-body">
+                <h3>Professional</h3>
+                <div class="price">
+                  <strong>19.99 $</strong>
+                  <div class="recurrence">/month</div>
+                </div>
+        
+                <div class="features">
+                  <div class="feature">
+                    <div class="icon">
+                      <i class="fas fa-user-alt fa-xs fa-fw"></i>
+                    </div>
+                    <div class="text">1 user</div>
+                  </div>
+                  <div class="feature">
+                    <div class="icon">
+                      <i class="fas fa-folder fa-xs fa-fw"></i>
+                    </div>
+                    <div class="text">3tb di spazio di archiviazione sicuro</div>
+                  </div>
+                  <div class="feature">
+                    <div class="icon">
+                      <i class="fas fa-pencil-alt fa-xs fa-fw"></i>
+                    </div>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                  </div>
+                </div>
+        
+                <a href="#" class="btn btn-lg btn-primary w-100 mb-2">Prova gratis per 30 giorni</a>
+        
+                <div class="plan_call_to_action">
+                  oppure <a href="#" class="link">acquista ora</a>
+                </div>
+        
+                <hr>
+        
+                <div class="plan-details">
+                  <h4>Punti salienti del piano</h4>
+                  <div class="features">
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor </div>
+                    </div>
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor </div>
+                    </div>
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-33">
+            <div class="card">
+              <div class="card-header">
+                Singolo
+              </div>
+              <div class="card-body">
+                <h3>Professional</h3>
+                <div class="price">
+                  <strong>19.99 $</strong>
+                  <div class="recurrence">/month</div>
+                </div>
+        
+                <div class="features">
+                  <div class="feature">
+                    <div class="icon">
+                      <i class="fas fa-user-alt fa-xs fa-fw"></i>
+                    </div>
+                    <div class="text">1 user</div>
+                  </div>
+                  <div class="feature">
+                    <div class="icon">
+                      <i class="fas fa-folder fa-xs fa-fw"></i>
+                    </div>
+                    <div class="text">3tb di spazio di archiviazione sicuro</div>
+                  </div>
+                  <div class="feature">
+                    <div class="icon">
+                      <i class="fas fa-pencil-alt fa-xs fa-fw"></i>
+                    </div>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                  </div>
+                </div>
+        
+                <a href="#" class="btn btn-lg btn-primary w-100 mb-2">Prova gratis per 30 giorni</a>
+        
+                <div class="plan_call_to_action">
+                  oppure <a href="#" class="link">acquista ora</a>
+                </div>
+        
+                <hr>
+        
+                <div class="plan-details">
+                  <h4>Punti salienti del piano</h4>
+                  <div class="features">
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor </div>
+                    </div>
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor </div>
+                    </div>
+                    <div class="feature">
+                      <div class="icon">
+                        <i class="fas fa-check fa-sm fa-fw"></i>
+                      </div>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-100">
+            <div class="card">
+              <div class="card-header">
+                Team
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-75 pr-0">
+                    <h3>Enterprise</h3>
+                    <p class="my-2"><strong>Contatta luffucio vendite per i prezzi</strong></p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-25 px-0">
+                    <a href="" class="btn btn-lg btn-primary w-100">Contatta l'ufficio</a>
+                  </div>
+                  </div>
+                  </div>
+                  
+                  </div>
+                  </div>
         </div>
       </div>
     </section>
     <!-- /.plans -->
-    <section class="partners">
+    <section class="partners mt-2">
       <div class="container">
         <div class="row">
-          <div class="col-60"></div>
+          <div class="col-60">
+            <img src="./assets/img/partner.png" alt="">
+          </div>
           <!-- /.col-60 -->
-          <div class="col-40"></div>
+          <div class="col-40">
+            <h3 class="mt-2">Entra in contatto con un partner Dropbox</h3>
+            <p class="my-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates alias obcaecati
+              temporibus ipsum
+              fuga aut architecto reiciendis nobis fugit, maiores facere impedit eaque vel beatae nam iure voluptatem
+              veniam dolore!
+            </p>
+            <a href="" class="btn btn-lg btn-outline">Trova un partner</a>
+          </div>
           <!-- /.col-40 -->
         </div>
         <!-- /.row -->
@@ -115,26 +468,288 @@
     <!-- /.partners -->
     <section class="features">
       <div class="container">
+        <h2 class="pt-4">Esegui piu operazioni con dropbox business</h2>
         <div class="row">
-          <div class="col-33"></div>
-          <div class="col-33"></div>
-          <div class="col-33"></div>
-          <div class="col-33"></div>
-          <div class="col-33"></div>
-          <div class="col-33"></div>
+          <div class="col-33">
+            <div class="card">
+              <img src="./assets/img/business-feature-coordinate-it.png">
+              <h3 class="my-1">Passa di meno da un stromento all'altro</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dolore voluptatum ab voluptates
+                earum ad sit obcaecati, dolor quos facilis beatae natus nesciunt quisquam, soluta delectus et minima
+                maiores sunt.</p>
+            </div>
+          </div>
+          <div class="col-33">
+            <div class="card">
+              <img src="./assets/img/business-feature-coordinate-it.png">
+              <h3 class="my-1">Passa di meno da un stromento all'altro</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dolore voluptatum ab voluptates
+                earum ad sit obcaecati, dolor quos facilis beatae natus nesciunt quisquam, soluta delectus et minima
+                maiores sunt.</p>
+            </div>
+          </div>
+          <div class="col-33">
+            <div class="card">
+              <img src="./assets/img/business-feature-coordinate-it.png">
+              <h3 class="my-1">Passa di meno da un stromento all'altro</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dolore voluptatum ab voluptates
+                earum ad sit obcaecati, dolor quos facilis beatae natus nesciunt quisquam, soluta delectus et minima
+                maiores sunt.</p>
+            </div>
+          </div>
+          <div class="col-33">
+            <div class="card">
+              <img src="./assets/img/business-feature-coordinate-it.png">
+              <h3 class="my-1">Passa di meno da un stromento all'altro</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dolore voluptatum ab voluptates
+                earum ad sit obcaecati, dolor quos facilis beatae natus nesciunt quisquam, soluta delectus et minima
+                maiores sunt.</p>
+            </div>
+          </div>
+          <div class="col-33">
+            <div class="card">
+              <img src="./assets/img/business-feature-coordinate-it.png">
+              <h3 class="my-1">Passa di meno da un stromento all'altro</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dolore voluptatum ab voluptates
+                earum ad sit obcaecati, dolor quos facilis beatae natus nesciunt quisquam, soluta delectus et minima
+                maiores sunt.</p>
+            </div>
+          </div>
+          <div class="col-33">
+            <div class="card">
+              <img src="./assets/img/business-feature-coordinate-it.png">
+              <h3 class="my-1">Passa di meno da un stromento all'altro</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dolore voluptatum ab voluptates
+                earum ad sit obcaecati, dolor quos facilis beatae natus nesciunt quisquam, soluta delectus et minima
+                maiores sunt.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- /.features -->
-    <section class="teams"></section>
+    <section class="teams">
+      <div class="container">
+        <h2 class="w-40 pt-4">
+          Piu di 500.000 team
+          utilizzando Dropbox Business
+        </h2>
+        <a href="#" class="link">scopri di piu sui notsto clienti</a>
+      </div>
+      <div class="loghi">
+        <div class="row m-0">
+          <div class="col-30 h-100 p-0">
+    
+            <div class="row m-0">
+              <div class="col-50">
+                <div class="square bg-success active">
+                  <img src="./assets/img/designit.svg" alt="">
+                </div>
+              </div>
+              <div class="col-50">
+                <div class="square bg-accent-deep">
+                  <img src="./assets/img/arizona_state_university.svg" alt="">
+                </div>
+              </div>
+              <div class="col-50 ">
+                <div class="square bg-primary-light">
+                  <img src="./assets/img/university_of_florida.svg" alt="">
+                </div>
+    
+              </div>
+              <div class="col-50">
+                <div class="square bg-accent">
+                  <img src="./assets/img/topps.svg" alt="">
+                </div>
+              </div>
+            </div>
+    
+          </div>
+          <div class="col-40 h-100 bg-light">
+    
+            <div class="brand">
+              <img src="./assets/img/designit.svg" alt="">
+              <hr>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe nostrum pariatur illo neque dolorum
+                corporis rerum amet expedita ipsa culpa, reprehenderit necessitatibus veniam suscipit porro accusantium
+                vero
+                labore ullam sapiente.</p>
+    
+              <div class="author">
+                Morten Thomsen, Global IT Lead
+              </div>
+            </div>
+    
+          </div>
+          <div class="col-30 h-100 p-0">
+            <div class="row m-0">
+              <div class="col-50">
+                <div class="square bg-accent-light">
+                  <img src="./assets/img/designit.svg" alt="">
+                </div>
+              </div>
+              <div class="col-50">
+                <div class="square bg-secondary">
+                  <img src="./assets/img/arizona_state_university.svg" alt="">
+                </div>
+              </div>
+              <div class="col-50 ">
+                <div class="square bg-primary-deep">
+                  <img src="./assets/img/university_of_florida.svg" alt="">
+                </div>
+    
+              </div>
+              <div class="col-50">
+                <div class="square bg-warning">
+                  <img src="./assets/img/topps.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- /.teams -->
-    <section class="call_to_action"></section>
+    <section class="call_to_action">
+      <div class="container">
+        <div class="row">
+          <div class="col-60">
+            <h2 class="m-0">Porta Dropbox Business nella tua azienda</h2>
+          </div>
+          <div class="col-40 text-right">
+            <a class="btn btn-light btn-lg" href="#">Inizia la prova gratuita</a>
+          </div>
+        </div>
+    
+    
+      </div>
+    </section>
     <!-- /.call_to_action -->
-    <section class="faq"></section>
-    <!-- /.faq -->
+    <section class="faqs">
+      <div class="container">
+        <h2 class="pt-4">Domande Frequenti</h2>
+        <div class="faq">
+          <div class="question">
+            <strong>Lorem ipsum dolor sit amet.</strong>
+            <i class="fas fa-chevron-down fa-lg fa-fw"></i>
+          </div>
+          <div class="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quasi quae blanditiis sit dolores
+              temporibus vel molestias placeat odit voluptas aperiam dolore aliquam facere iste! Ipsam quos eaque aut.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <strong>Lorem ipsum dolor sit amet.</strong>
+            <i class="fas fa-chevron-down fa-lg fa-fw"></i>
+          </div>
+          <div class="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quasi quae blanditiis sit dolores
+              temporibus vel molestias placeat odit voluptas aperiam dolore aliquam facere iste! Ipsam quos eaque aut.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <strong>Lorem ipsum dolor sit amet.</strong>
+            <i class="fas fa-chevron-down fa-lg fa-fw"></i>
+          </div>
+          <div class="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quasi quae blanditiis sit dolores
+              temporibus vel molestias placeat odit voluptas aperiam dolore aliquam facere iste! Ipsam quos eaque aut.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <strong>Lorem ipsum dolor sit amet.</strong>
+            <i class="fas fa-chevron-down fa-lg fa-fw"></i>
+          </div>
+          <div class="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quasi quae blanditiis sit dolores
+              temporibus vel molestias placeat odit voluptas aperiam dolore aliquam facere iste! Ipsam quos eaque aut.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <strong>Lorem ipsum dolor sit amet.</strong>
+            <i class="fas fa-chevron-down fa-lg fa-fw"></i>
+          </div>
+          <div class="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quasi quae blanditiis sit dolores
+              temporibus vel molestias placeat odit voluptas aperiam dolore aliquam facere iste! Ipsam quos eaque aut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.faqs -->
   </main>
   <!-- /#site_main -->
-  <footer id="site_footer"></footer>
+  <footer id="site_footer">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-20">
+          <h3>Lorem</h3>
+          <ul class="unstyled">
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+          </ul>
+        </div>
+        <div class="col-20">
+          <h3>Lorem</h3>
+          <ul class="unstyled">
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+          </ul>
+        </div>
+        <div class="col-20">
+          <h3>Lorem</h3>
+          <ul class="unstyled">
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+          </ul>
+        </div>
+        <div class="col-20">
+          <h3>Lorem</h3>
+          <ul class="unstyled">
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+          </ul>
+        </div>
+        <div class="col-20">
+          <h3>Lorem</h3>
+          <ul class="unstyled">
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="lang">
+        <i class="fas fa-globe"></i>
+        <span>Italiano</span>
+        <i class="fas fa-angle-up"></i>
+      </div>
+    </div>
+  </footer>
   <!-- /#site_footer -->
 
 </body>

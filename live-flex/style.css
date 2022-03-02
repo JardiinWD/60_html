@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: palegreen;
+  width: 600px;
+  height: 400px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-purle {
+  background-color: blueviolet;
+}
+
+.bg-yellow {
+  background-color: yellow;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.d-flex {
+  display: flex;
+}
