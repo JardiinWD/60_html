@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: blanchedalmond;
+}
+ */
+body {
+  background-color: blue;
+}
+
+/* @media screen and (max-width: 449px) {
+  body {
+    background-color: blue;
+  }
+} */
+
+@media screen and (min-width: 450px) {
+  body {
+    background-color: aquamarine;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: red;
+  }
+}
