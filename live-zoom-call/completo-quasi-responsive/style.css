@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+}
+
+.continer {
+  width: 70%;
+  max-width: 1176px;
+  margin: auto;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.col {
+  width: auto;
+  height: 125px;
+  flex-basis: auto;
+
+}
+
+
+
+/* Main */
+
+main {
+  height: calc(100vh - 80px);
+  background-color: black;
+  color: white;
+  overflow-y: auto;
+}
+
+.options {
+  text-align: right;
+  padding: 1rem 1rem 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 0.25rem;
+}
+
+.options>.speaker-view,
+.options>.full-screen {
+  background-color: gray;
+  padding: 0.15rem .25rem;
+  border-radius: .15rem;
+  font-size: 0.75rem;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+.name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.534);
+  padding: 0.25rem;
+}
+
+footer {
+  height: 80px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  min-width: 960px;
+}
+
+.left-menu,
+.main-menu,
+.right-menu {
+  display: flex;
+  column-gap: 0.5rem;
+  height: 100%;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.item span {
+  font-size: 0.75rem;
+}
+
+.right-menu>.btn {
+
+  background: darkgray;
+  /* height: 100%; */
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.btn,
+.item {
+  cursor: pointer;
+  height: 100%;
+  justify-content: center;
+}
+
+.end-meeting {
+  color: red;
+}
