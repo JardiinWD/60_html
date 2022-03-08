@@ -1,0 +1,61 @@
+/* Common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.d-flex {
+  display: flex;
+}
+
+
+/* Mobile First */
+.wrapper {
+  height: calc(100vh - 80px);
+  background-color: rgb(20, 13, 56);
+}
+
+
+.wrapper>aside {
+  width: 100px;
+  height: calc(100vh - 80px);
+  background-color: black;
+  transition: width 1s;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.wrapper>main {
+  width: calc(100% - 100px);
+  height: 100%;
+  margin-left: 100px;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(36, 36, 36);
+}
+
+
+/* Media Query sm*/
+
+@media screen and (min-width: 768px) {
+  .wrapper>aside {
+    width: 260px;
+  }
+
+  .wrapper>main {
+    width: calc(100% - 260px);
+    margin-left: 260px;
+  }
+
+}
