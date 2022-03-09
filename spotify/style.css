@@ -1,0 +1,175 @@
+/* Common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #region Utility */
+.d-flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 100%;
+  height: 300px;
+  background-color: pink;
+  border: 1px solid;
+}
+
+/* #endregion Utility */
+
+.wrapper {
+  height: calc(100vh - 80px);
+  background-color: rgb(20, 13, 56);
+}
+
+.wrapper>aside,
+.wrapper>main {
+  height: 100%;
+}
+
+/* Aside */
+.wrapper>aside {
+  width: 100px;
+  background-color: black;
+  transition: all 1s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+.wrapper>aside>.top {
+  min-height: 300px;
+  width: 100%;
+  background-color: gray;
+}
+
+.wrapper>aside>.bottom {
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+}
+
+
+
+/* Main */
+.wrapper>main {
+  width: calc(100% - 100px);
+  overflow: hidden;
+}
+
+main>.banner {
+  height: 80px;
+  background-color: red;
+}
+
+main>.music {
+  height: calc(100% - 80px);
+  overflow-y: auto;
+
+}
+
+main>.music>h2 {
+  color: white;
+}
+
+
+
+/* #region Footer */
+footer {
+  height: 80px;
+  background-color: rgb(36, 36, 36);
+
+  display: flex;
+}
+
+footer>.playing,
+footer>.volume {
+  flex-grow: 1;
+  background-color: azure;
+}
+
+footer>.player {
+  flex-grow: 3;
+}
+
+/* #endregion footer */
+
+
+/* #region Media Queries */
+
+/*sm*/
+@media screen and (min-width: 568px) {
+  .col {
+    width: calc(100% / 2);
+  }
+}
+
+/*md*/
+
+@media screen and (min-width: 768px) {
+  .wrapper>aside {
+    width: 260px;
+  }
+
+  .wrapper>main {
+    width: calc(100% - 260px);
+  }
+
+  .col {
+    width: calc(100% / 3);
+  }
+
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+
+  .col {
+    width: calc(100% / 4);
+  }
+
+
+}
+
+
+/* xl  */
+@media screen and (min-width: 1440px) {
+
+  .col {
+    width: calc(100% / 6);
+  }
+
+  .container {
+    max-width: 1920px;
+  }
+
+}
+
+
+
+/* h-xs */
+@media screen and (max-height: 260px) {
+  main>.banner {
+    display: none;
+  }
+
+  main>.music {
+    height: 100%;
+  }
+}
+
+/* #endregion media queries */
